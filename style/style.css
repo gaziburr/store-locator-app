@@ -1,6 +1,176 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  position: absolute;
+  font-size: 60px;
+  font-weight: bold;
+  z-index: 100;
+  top: 100px;
+  left: 100px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.search-container {
+  position: absolute;
+  background-color: #454e45;
+  height: 60px;
+  width: 400px;
+  z-index: 100;
+  top: 180px;
+  left: 100px;
+  border-radius: 30px;
+  display: flex;
+}
+
+.search-container .search {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.search-container input {
+  width: 100%;
+  font-size: 25px;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.search-container input:focus {
+    outline: none;
+}
+
+.search i {
+    font-size: 25px;
+    color: white;
+}
+
+.store-list-container {
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    width: 400px;
+    left: 100px;
+    top: 260px;
+    bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    display: flex;
+}
+
+.store-list {
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding: 0 30px;
+}
+
+.store-container {
+  padding: 20px 0;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  display:flex;
+}
+
+.store-container-background, .store-container-background:hover {
+  display: flex;
+  flex-grow: 1;
+}
+
+.store-container-background:hover{
+    border-radius: 12px;
+    background-color: #ccc;
+    padding: 5px 8px;
+    margin: 12px 0;
+}
+
+.store-info-container {
+  flex-grow: 1;
+}
+
+.store-address span{
+  display: block;
+}
+
+.store-address .street {
+  font-size: 30px;
+}
+
+.store-address .city {
+  font-size: 20px;
+}
+
+.store-container .store-phone-number {
+  color: grey;
+}
+
+.store-container .store-number {
+  color: black;
+}
+
+.store-number-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-number-container .store-number{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #454E53;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.mapInfo {
+  min-width: 300px;
+}
+
+.mapInfo .name{
+  font-weight:bold;
+  font-size: 20;
+}
+
+.mapInfo .open-status{
+  color: grey;
+  padding-bottom: 5px;
+  border-bottom: 0.1px solid grey;
+}
+
+.circle {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.mapInfo .address, .mapInfo .phone-number{
+  margin-top: 5px;
+  margin-left: 5px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
